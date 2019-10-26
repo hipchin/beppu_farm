@@ -1,0 +1,61 @@
+#about {
+    padding: 80px 0 300px 0;
+    .about_title {
+        @include title (30px, $green);
+    } 
+    .contents_wrap {
+        position: relative;
+        // min-width: 1100px;
+        // max-width: 1500px;
+        .contents_first {
+            width: 100%;
+            display: flex;
+            margin-top: 50px;
+            .cf_img1 {
+                width: 55%;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    transform: translateY(-135px);
+                }
+            }
+            .cf_text1 {
+                @include font(1.5vw, $green);
+                width: 45%;
+                line-height: 5vh;
+                position: absolute;
+                right: -13%;
+                top: 15%;
+                & span {
+                    @include font(2vw, $green);
+                    font-weight: bold;
+                }
+            }
+        } 
+        .contents_second {
+            // width: 100%;
+            display: flex;
+            // position: absolute;
+            // overflow: hidden;
+            // z-index: 10;
+            .cf_img2 {
+                width: 55%;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                & img {
+                  height: 75%;
+                  width: 100%;
+                }
+            }
+            .cf_text2 {
+                 @include font(1.5vw, $green);
+                width: 45%;
+                line-height: 5vh;
+                position: absolute;
+                bottom: -25%;
+               }
+        }      
+    }
+}

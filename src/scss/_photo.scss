@@ -1,0 +1,36 @@
+#photo {
+    background: $bgc;
+    padding: 80px 0;
+    .photo_title {
+        @include title (30px,$white);
+    }
+    .photo_img_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        .photo_img {
+                & img {
+                    @include size;
+                }
+            }
+        .one, .two {
+            width: 29%;
+        }
+        .three {
+            width: 38%;
+        }
+        .one, .two, .three {
+            margin-bottom: 2.5vh;
+        }
+        .four {
+            width: 59%;
+        }
+        .five {
+            width: 39%;
+        }
+
+        
+    }
+}

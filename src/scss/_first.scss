@@ -1,0 +1,39 @@
+#first {
+    width: 100%;
+    .first_img_wrap {
+        width: 100%;
+        display: flex;
+        .one {
+            width: 50%;
+            overflow: hidden;
+            & img {
+                @include size;
+            }
+        }
+        .img_group_first {
+            width: 50%;
+            .two {
+                height: 50%;
+                & img {
+                    @include size;
+                }
+            }
+            .img_group_second {
+                display: flex;
+                height: 50%;
+                .three {
+                    width: 50%;
+                    & img {
+                        @include size;
+                    }
+                }
+                .four {
+                    width: 50%;
+                    & img {
+                        @include size;
+                    }
+                }
+            }
+        }
+    }
+}

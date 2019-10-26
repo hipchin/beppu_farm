@@ -1,0 +1,21 @@
+{
+  "name": "beppufarm_inoue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "url-loader": "^2.2.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "yarn run webpack-dev-server"
+  }
+}

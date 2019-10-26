@@ -1,0 +1,55 @@
+
+//////変数////////
+
+$white :white;
+$green : green;
+$bgc: linear-gradient(to bottom, #006400, #32CD32);
+
+/////mixin//////
+
+@mixin font($size,$color) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin size {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin title ($size,$color){
+    @include font($size,$color);
+    font-weight: bold;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+        @include line($color);
+        margin-right: 1rem;
+    }
+    &:after {
+        @include line($color);
+        margin-left: 1rem;
+    } 
+}
+
+@mixin line ($color) {
+    width: 2rem;
+        content: "";
+        display: inline-block;
+        border-top: 3px solid $color;
+}
+
+///////全体のcss//////
+
+body {
+    font-family: 'Roboto Slab', serif;
+    min-width: 900px;
+    max-width: 1800px;
+}
+
+.inner {
+    width: 85%;
+    margin: 0 auto;
+}
+

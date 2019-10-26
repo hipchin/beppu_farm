@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+    background: $bgc;
+    display: flex;
+    .hd_wrap {
+        width: 15%;
+        padding: 6vh 0 14vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .hd_title {
+            @include font(30px, $white);
+            font-weight: bold;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+        .hd_menu {
+            @include font(20px, $white);
+            & li {
+                cursor: pointer;
+            }
+            & li:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
