@@ -1,1 +1,2 @@
-import "../scroll.js"
+import "./scroll.js"
+import "./main.scss"

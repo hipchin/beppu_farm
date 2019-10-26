@@ -5,16 +5,20 @@ module.exports = {
         filename: "main.js",
         path: __dirname + "/dist"
     },
+    devServer: {
+        contentBase: "dist",
+        open: true
+    },
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.scss/,
                 use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader',
                 ]
-            },
+            }
         ]
     }
 };
