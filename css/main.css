@@ -287,13 +287,17 @@ header .hd_wrap .hd_menu li:not(:last-child) {
 }
 
 #about .contents_wrap .contents_first .cf_text1 {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: green;
   width: 45%;
   line-height: 5vh;
-  position: absolute;
-  right: -13%;
-  top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 5%;
 }
 
 #about .contents_wrap .contents_first .cf_text1 span {
@@ -306,14 +310,12 @@ header .hd_wrap .hd_menu li:not(:last-child) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: -60%;
 }
 
 #about .contents_wrap .contents_second .cf_img2 {
   width: 55%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  right: 0;
 }
 
 #about .contents_wrap .contents_second .cf_img2 img {
@@ -322,12 +324,17 @@ header .hd_wrap .hd_menu li:not(:last-child) {
 }
 
 #about .contents_wrap .contents_second .cf_text2 {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: green;
   width: 45%;
   line-height: 5vh;
-  position: absolute;
-  bottom: -25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10%;
 }
 
 #photo {
