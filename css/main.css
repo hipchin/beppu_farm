@@ -229,7 +229,9 @@ header .hd_wrap .hd_menu li:not(:last-child) {
 }
 
 #about {
-  padding: 80px 0 300px 0;
+  padding: 80px 0 200px 0;
+  max-width: 1600px;
+  min-width: 1100px;
 }
 
 #about .about_title {
@@ -334,7 +336,7 @@ header .hd_wrap .hd_menu li:not(:last-child) {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-top: 10%;
+  padding-top: 6%;
 }
 
 #photo {
@@ -398,6 +400,10 @@ header .hd_wrap .hd_menu li:not(:last-child) {
 
 #photo .photo_img_wrap .three {
   width: 38%;
+}
+
+#photo .photo_img_wrap .three img {
+  width: 100%;
 }
 
 #photo .photo_img_wrap .one, #photo .photo_img_wrap .two, #photo .photo_img_wrap .three {

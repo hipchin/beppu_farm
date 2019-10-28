@@ -20,6 +20,9 @@
         }
         .three {
             width: 38%;
+            & img {
+                width: 100%;
+            }
         }
         .one, .two, .three {
             margin-bottom: 2.5vh;
@@ -30,7 +33,5 @@
         .five {
             width: 39%;
         }
-
-        
     }
 }
